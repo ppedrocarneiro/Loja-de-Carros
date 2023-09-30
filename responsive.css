@@ -1,0 +1,93 @@
+
+@media screen and (max-width: 1366px) {
+    .carros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carro {
+        width: calc(25% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .nav-list {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        float: none;
+        margin-right: 10px;
+    }
+
+    .nav-list .dropdown a {
+        padding: 5px 11px;
+    }
+
+    .contatos {
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .contatos-list {
+        float: none;
+        text-align: center;
+    }
+
+    .contatos-list li {
+        display: inline-block;
+        float: none;
+        margin-right: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .nav-list {
+        float: none;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        float: none;
+        margin-right: 10px;
+    }
+
+    .carros {
+        flex-wrap: wrap;
+    }
+
+    .carro {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.carro {
+    display: none;
+}
+
+.bmw .bmw,
+.volks .volks,
+.fiat .fiat,
+.toyota .toyota,
+.ford .ford,
+.jeep .jeep {
+    display: block;
+}

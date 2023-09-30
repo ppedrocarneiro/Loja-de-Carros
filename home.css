@@ -32,9 +32,6 @@ body {
     background-color: #111;
 }
 
-
-/* design dropdow*/
-
 .dropdown {
     overflow: hidden;
     float: left;
@@ -60,7 +57,7 @@ body {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .carros img {
@@ -84,6 +81,7 @@ body {
     align-content: flex-start;
     justify-content: center;
 }
+
 
 .icon span {
     margin-bottom: 2000;
