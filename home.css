@@ -129,6 +129,7 @@ body {
 .car-shop i.fa-shopping-cart {
   color: rgba(42, 44, 45, 0.781);
 }
+
 .car-shop:hover i.fa-shopping-cart {
   color: #f7d354;
 }
@@ -194,4 +195,72 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #f7d354;
   border-radius: 10px;
+}
+
+.gif-container {
+  width: 1700px;
+  /* Largura desejada para o retângulo */
+  height: 400px;
+  /* Altura desejada para o retângulo */
+  position: relative;
+  /* Permite posicionar elementos filhos em relação a este elemento */
+  overflow: hidden;
+  /* Oculta qualquer conteúdo que transborde do retângulo */
+  margin: 0 auto;
+  /* Centraliza o retângulo horizontalmente */
+
+  border-radius: 10px;
+}
+
+.gif {
+  width: 100%;
+  /* Garante que o GIF ocupe todo o espaço do retângulo */
+  height: 100%;
+  /* Garante que o GIF ocupe todo o espaço do retângulo */
+  object-fit: cover;
+  /* Redimensiona o GIF para preencher o retângulo */
+}
+
+.secmain p {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(0, 0, 0, .25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  color: black;
+  text-align: center;
+  position: absolute;
+  width: 40em;
+  top: 18%;
+  left: 50%;
+  margin: 0 0 0 -20em;
+}
+
+.secmain p .span {
+  font: 700 4em "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+
+  background: url("animated-text-fill.png") repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
