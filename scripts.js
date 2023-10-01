@@ -1,34 +1,119 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".nav-list li a");
+function rolarParaBaixo() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetBrand = link.textContent.toLowerCase();
+function rolarParaCima() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
-      // Se o link clicado for "Home"
-      if (targetBrand === "home") {
-        // Exiba todas as seções de carros
-        const carSections = document.querySelectorAll(".car-section");
-        carSections.forEach((section) => {
-          section.style.display = "block";
-        });
-        // Role a página para o topo
-        window.scrollTo({ top: 0, behavior: "smooth" });
+var bmws = document.querySelectorAll(".bmw");
+var volkss = document.querySelectorAll(".volks");
+var fiats = document.querySelectorAll(".fiat");
+var toyotas = document.querySelectorAll(".toyota");
+var fords = document.querySelectorAll(".ford");
+var jeeps = document.querySelectorAll(".jeep");
+
+var cards = document.querySelectorAll(".car-section");
+
+var Home = document.getElementById("Home");
+
+Home.addEventListener("click", function () {
+  cards.forEach(function (card) {
+    card.style.display = "flex";
+  });
+});
+
+bmws.forEach(function (bmw) {
+  bmw.addEventListener("click", function () {
+    var getId = this.getAttribute("id");
+
+    cards.forEach(function (card) {
+      var cardHref = card.getAttribute("id");
+
+      if (getId === cardHref) {
+        card.style.display = "flex";
       } else {
-        // Oculte todas as seções de carros, exceto a seção da marca correspondente
-        const carSections = document.querySelectorAll(".car-section");
-        carSections.forEach((section) => {
-          section.style.display = "none";
-        });
-        document.getElementById(targetBrand).style.display = "block";
+        card.style.display = "none";
       }
+    });
+  });
+});
 
-      // Verifique se o link clicado é "Contatos"
-      if (targetBrand === "contatos") {
-        // Role a página para a seção de contatos (rodapé)
-        const contatosSection = document.getElementById("contatos");
-        contatosSection.scrollIntoView({ behavior: "smooth" });
+volkss.forEach(function (volks) {
+  volks.addEventListener("click", function () {
+    var getId = this.getAttribute("id");
+
+    cards.forEach(function (card) {
+      var cardHref = card.getAttribute("id");
+
+      if (getId === cardHref) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+
+fiats.forEach(function (fiat) {
+  fiat.addEventListener("click", function () {
+    var getId = this.getAttribute("id");
+
+    cards.forEach(function (card) {
+      var cardHref = card.getAttribute("id");
+
+      if (getId === cardHref) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+
+toyotas.forEach(function (toyota) {
+  toyota.addEventListener("click", function () {
+    var getId = this.getAttribute("id");
+
+    cards.forEach(function (card) {
+      var cardHref = card.getAttribute("id");
+
+      if (getId === cardHref) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+
+fords.forEach(function (ford) {
+  ford.addEventListener("click", function () {
+    var getId = this.getAttribute("id");
+
+    cards.forEach(function (card) {
+      var cardHref = card.getAttribute("id");
+
+      if (getId === cardHref) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+
+jeeps.forEach(function (jeep) {
+  jeep.addEventListener("click", function () {
+    var getId = this.getAttribute("id");
+
+    cards.forEach(function (card) {
+      var cardHref = card.getAttribute("id");
+
+      if (getId === cardHref) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
       }
     });
   });
