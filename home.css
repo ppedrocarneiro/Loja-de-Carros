@@ -8,7 +8,7 @@ body {
   background-color: black;
 }
 
-.navbar {
+.navbar navbar-expand-lg bg-body-tertiary {
   background-color: #1a1919;
   padding: 10px 0px 10px 0px;
   display: flex;
@@ -263,4 +263,64 @@ body {
   100% {
     background-position: 100% 50%;
   }
+}
+
+.bmw{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.fiat{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.ford{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.jeep{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.toyota{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.volks{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.categoria1{
+  padding:0px 0px 0px 50px;
+}
+
+.categoria2{
+  padding:0px 0px 0px 50px;
 }
